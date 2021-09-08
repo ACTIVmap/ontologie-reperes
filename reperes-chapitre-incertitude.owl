@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jm/ontologies/2021/6/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/jm/ontologies/2021/6/untitled-ontology-8"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:reperes="http://www.semanticweb.org/activmap/reperes#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/activmap/reperes">
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christophe Rey</dc:contributor>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jean-Marie Favreau</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-07</dc:date>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologie de description des repères à destination des personnes en situation de handicap visuel</dc:description>
+        <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cette ontologie est distribuée sous licence GPLv3 : https://www.gnu.org/licenses/gpl-3.0.fr.html</dc:rights>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologie Repères PSHV</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ce document est issu d&apos;un projet de recherche financé par l&apos;ANR (ANR-19-CE19-0005) pour une durée de 42 mois (mars 2020 - février 2024).
+Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#a_accès_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#a_accès_a">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/activmap/reperes#accessibleà"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#accessibleà -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#accessibleà"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#caractéristique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#caractéristique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#composition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#composition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#détectable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#détectable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#fiable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#fiable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#na_pas_accès_à -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#na_pas_accès_à">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/activmap/reperes#nonaccessibleà"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#nonaccessibleà -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#nonaccessibleà">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#permanent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#permanent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ponctuel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#ponctuel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/activmap/reperes#position"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#CoordonnéeCurviligne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#CoordonnéeCurviligne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#CoordonnéeOrthogonale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#CoordonnéeOrthogonale">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#OSMWay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#OSMWay"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#AuMoinsFaible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#AuMoinsFaible">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Faible"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#AuMoinsImportant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#AuMoinsImportant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#AuMoinsModéré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#AuMoinsModéré">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#AuMoinsNul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#AuMoinsNul">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Faible"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Nul"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Degré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Indice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#Indice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#composition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#caractéristique"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#AuMoinsModéré"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#fiable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#permanent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleAccessible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleAccessible">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#accessibleà"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleNonAccessible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleNonAccessible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleNonAccessible">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#nonaccessibleà"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Personne"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#RepèreComposé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#RepèreComposé">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#caractéristique"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#composition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#fiable"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#permanent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#composition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#RepèreSimple"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#RepèrePrimaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#RepèrePrimaire">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#composition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#caractéristique"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#fiable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#permanent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#RepèreSecondaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#RepèreSecondaire">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#composition"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#caractéristique"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#fiable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#AuMoinsModéré"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#permanent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#RepèreSimple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#RepèreSimple">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#caractéristique"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#fiable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#permanent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Total -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#Total">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ÉlémentGéographique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéographique"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéométriqueDétectable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#ÉlémentGéographique"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/activmap/reperes#détectable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielleAccessible"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Bateau1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Bateau1">
+        <reperes:caractéristique rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+        <reperes:détectable rdf:resource="http://www.semanticweb.org/activmap/reperes#podotactile"/>
+        <reperes:fiable rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+        <reperes:permanent rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Faible -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Faible">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Haie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Haie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéographique"/>
+        <reperes:détectable rdf:resource="http://www.semanticweb.org/activmap/reperes#tactile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#HaiePortail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#HaiePortail">
+        <reperes:caractéristique rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+        <reperes:composition rdf:resource="http://www.semanticweb.org/activmap/reperes#Haie"/>
+        <reperes:composition rdf:resource="http://www.semanticweb.org/activmap/reperes#Portail"/>
+        <reperes:fiable rdf:resource="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+        <reperes:permanent rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Important -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Important">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Modéré -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Nul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Nul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Portail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Portail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ÉlémentGéographique"/>
+        <reperes:détectable rdf:resource="http://www.semanticweb.org/activmap/reperes#sens_des_masses"/>
+        <reperes:détectable rdf:resource="http://www.semanticweb.org/activmap/reperes#tactile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Total -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Total">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degré"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Utilisateur1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Utilisateur1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Personne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#olfactif -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#olfactif">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#podotactile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#podotactile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+        <reperes:accessibleà rdf:resource="http://www.semanticweb.org/activmap/reperes#Utilisateur1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#sens_des_masses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#sens_des_masses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#sonore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#sonore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#tactile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#tactile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+        <reperes:accessibleà rdf:resource="http://www.semanticweb.org/activmap/reperes#Utilisateur1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#visuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#visuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#écholocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#écholocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#ModalitéSensorielle"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
