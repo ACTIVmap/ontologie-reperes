@@ -172,17 +172,9 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#CoordonnéeCurviligne -->
+    <!-- http://www.semanticweb.org/activmap/reperes#CurvilignCoordinate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#CoordonnéeCurviligne">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/activmap/reperes#CoordonnéeOrthogonale -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#CoordonnéeOrthogonale">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#CurvilignCoordinate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -191,6 +183,14 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     <!-- http://www.semanticweb.org/activmap/reperes#OSMWay -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#OSMWay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#OrthogonalCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/activmap/reperes#OrthogonalCoordinate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -245,9 +245,9 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Faible"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Low"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Moderate"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
                 </owl:oneOf>
             </owl:Class>
@@ -263,7 +263,7 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Moderate"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
                 </owl:oneOf>
             </owl:Class>
@@ -278,9 +278,9 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Faible"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Important"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Low"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Moderate"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Nul"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/activmap/reperes#Total"/>
                 </owl:oneOf>
@@ -552,31 +552,33 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#Faible -->
+    <!-- http://www.semanticweb.org/activmap/reperes#Gate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Faible">
-        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degree"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Gate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#GeographicElement"/>
+        <reperes:detectable rdf:resource="http://www.semanticweb.org/activmap/reperes#sens_des_masses"/>
+        <reperes:detectable rdf:resource="http://www.semanticweb.org/activmap/reperes#tactile"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#Haie -->
+    <!-- http://www.semanticweb.org/activmap/reperes#Hedge -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Haie">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Hedge">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#GeographicElement"/>
         <reperes:detectable rdf:resource="http://www.semanticweb.org/activmap/reperes#tactile"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#HaiePortail -->
+    <!-- http://www.semanticweb.org/activmap/reperes#HedgeGate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#HaiePortail">
-        <reperes:compound rdf:resource="http://www.semanticweb.org/activmap/reperes#Haie"/>
-        <reperes:compound rdf:resource="http://www.semanticweb.org/activmap/reperes#Portail"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#HedgeGate">
+        <reperes:compound rdf:resource="http://www.semanticweb.org/activmap/reperes#Gate"/>
+        <reperes:compound rdf:resource="http://www.semanticweb.org/activmap/reperes#Hedge"/>
         <reperes:distinctive rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
         <reperes:permanent rdf:resource="http://www.semanticweb.org/activmap/reperes#Total"/>
-        <reperes:reliable rdf:resource="http://www.semanticweb.org/activmap/reperes#Modéré"/>
+        <reperes:reliable rdf:resource="http://www.semanticweb.org/activmap/reperes#Moderate"/>
     </owl:NamedIndividual>
     
 
@@ -589,9 +591,17 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#Modéré -->
+    <!-- http://www.semanticweb.org/activmap/reperes#Low -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Modéré">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Moderate">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Degree"/>
     </owl:NamedIndividual>
     
@@ -605,16 +615,6 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#Portail -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Portail">
-        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#GeographicElement"/>
-        <reperes:detectable rdf:resource="http://www.semanticweb.org/activmap/reperes#sens_des_masses"/>
-        <reperes:detectable rdf:resource="http://www.semanticweb.org/activmap/reperes#tactile"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/activmap/reperes#Total -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Total">
@@ -623,10 +623,18 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/activmap/reperes#Utilisateur1 -->
+    <!-- http://www.semanticweb.org/activmap/reperes#User1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#Utilisateur1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#User1">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/activmap/reperes#echolocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#echolocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#SensorialModality"/>
     </owl:NamedIndividual>
     
 
@@ -643,7 +651,7 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#podotactile">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#SensorialModality"/>
-        <reperes:accessibleto rdf:resource="http://www.semanticweb.org/activmap/reperes#Utilisateur1"/>
+        <reperes:accessibleto rdf:resource="http://www.semanticweb.org/activmap/reperes#User1"/>
     </owl:NamedIndividual>
     
 
@@ -668,7 +676,7 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#tactile">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#SensorialModality"/>
-        <reperes:accessibleto rdf:resource="http://www.semanticweb.org/activmap/reperes#Utilisateur1"/>
+        <reperes:accessibleto rdf:resource="http://www.semanticweb.org/activmap/reperes#User1"/>
     </owl:NamedIndividual>
     
 
@@ -676,14 +684,6 @@ Plus d&apos;information : https://activmap.limos.fr/</rdfs:comment>
     <!-- http://www.semanticweb.org/activmap/reperes#visuel -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#visuel">
-        <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#SensorialModality"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/activmap/reperes#écholocation -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/activmap/reperes#écholocation">
         <rdf:type rdf:resource="http://www.semanticweb.org/activmap/reperes#SensorialModality"/>
     </owl:NamedIndividual>
 </rdf:RDF>
